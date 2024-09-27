@@ -39,6 +39,18 @@
         display: none;
     }
 
+    .header__language {
+        display: none;
+    }
+
+    .header__arrow-down {
+        display: none;
+    }
+
+    .header {
+        margin-top: 1rem;
+    }
+
     .header__menu {
         display: flex;
         align-items: center;
@@ -65,8 +77,8 @@
     }
 
     .header__separator {
-        border: 1px solid var(--clr-grey500);
-        padding-top: 1.5rem;
+        border: 1px solid var(--clr-grey);
+        padding-top: 2rem;
     }
 
     .header__globe {
@@ -76,10 +88,78 @@
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    .header__globe {
+        display: none;
+    }
+    
+    .header {
+        margin-top: 1.5rem;
+    }
+    
+    .header__language {
+        display: inline-block;
+        color: var(--clr-text);
+        font-size: var(--size-lg);
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+    
+    .header__arrow-down {
+        display: inline-block;
+        width: var(--size-xl);
+        height: var(--size-xl);
+        vertical-align: sub;
+    }
+
+    .header__nav-option {
+        font-size: var(--size-xl);
+    }
+    
+    .header__btn-demo {
+        font-size: var(--size-lg);
+    }
+}
 
 /* xl */
-/* @media (min-width: 1280px) {} */
+@media (min-width: 1280px) {
+    .header__title-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex: 1;
+    }
+
+    .header__nav-list {
+        flex: 1;
+    }
+
+    .header__top-right-menu {
+        flex: 2;
+        justify-content: flex-end;
+    }
+
+    .header__title {
+        display: block;
+        font-family: var(--font-logo);
+        font-size: var(--size-4xl);
+        font-weight: 700;
+        letter-spacing: -0.05em;
+    }
+    
+}
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+    .header__language {
+        font-size: var(--size-2xl);
+    }
+
+    .header__nav-option {
+        font-size: var(--size-2xl);
+    }
+    
+    .header__btn-demo {
+        font-size: var(--size-2xl);
+    }
+}

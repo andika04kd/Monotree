@@ -1,7 +1,6 @@
 :root {
     /* fonts */
     --font-primary: 'Inter', sans-serif;
-    
     --font-logo: 'Purissima Bold W00 Regular';
 
     /* colors */
@@ -85,17 +84,17 @@ p {
 }
 
 a {
-    color: var(--clr-slate50)
+    color: var(--clr-text)
 }
 
 strong {
-    color: var(--clr-light);
+    color: var(--clr-white);
     font-weight: 900;
 }
 
 button:focus-visible,
 a:focus-visible {
-    outline: solid var(--clr-light);
+    outline: solid var(--clr-white);
 }
 
 body::-webkit-scrollbar {
@@ -107,8 +106,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--clr-slate50);
-    outline: 1px solid var(--clr-slate50);
+    background-color: var(--clr-grey);
+    outline: 1px solid var(--clr-grey);
 }
 
 @font-face{
