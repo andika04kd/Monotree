@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="./styles/components/hero.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <title>Monotree</title>
     <script src="./src/main.js" type="module"></script>
@@ -55,10 +57,7 @@
                     <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
                     </svg>
               </div>
-
         </div>
-          
-
     </header>
 
     <!-- Mobile Navigation -->
@@ -72,9 +71,8 @@
             class="mobile-nav__x-mark">
             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
-
         </a>
-        <div class="mobile-nav__header-list">
+        <div>
             <a href="#" class="mobile-nav__header-option">Product</a>
             <a href="#" class="mobile-nav__header-option">Why Us</a>
             <a href="#" class="mobile-nav__header-option">About Us</a>
@@ -82,6 +80,46 @@
             <a href="#" class="mobile-nav__header-option">Blog</a>
         </div>
      </div>
-    <!-- <main></main> -->
+
+    <main>
+        <section class="hero container">
+            <div class="hero__content-container">
+                <h1 class="hero__title">
+                    Put people first
+                </h1>
+                <p class="hero__description">
+                    Fast, user-friendly and engaging - turn HR into people and culture and streamline your daily operations with your own branded app.
+                </p>
+                <img class="hero__img-mobile" src="./public/images/monotree-hero.png" alt="Monotree Background" width="522" height="616">
+                <div class="hero__demo-cta-container">
+                    <input type="email" name="email" id="hero__email" class="hero__email" placeholder="Enter work email" >
+                    <button class="hero__btn-demo btn">Book a demo</button>
+                </div>
+                <div class="hero__stat-container">
+                    <div class="hero__stat-item">
+                        <h2>75.2%</h2>
+                        <p class="hero__stat-desc">Average daily activity</p>
+                    </div>
+                    <div class="hero__separator"></div>
+                    <div class="hero__stat-item">
+                        <h2>~20k</h2>
+                        <p class="hero__stat-desc">Average daily users</p>
+                    </div>
+                </div>
+                <div class="hero__stars-container">
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/star--v1.png" alt="star--v1"/>
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/star--v1.png" alt="star--v1"/>
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/star--v1.png" alt="star--v1"/>
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/star--v1.png" alt="star--v1"/>
+                    <img width="24" height="24" src="https://img.icons8.com/plumpy/24/star-half-empty.png" alt="star-half-empty"/>
+                    <p class="hero__rating">4.5</p>
+                    <p>Average user rating</p>
+                </div>
+            </div>
+            <img class="hero__img-desktop" src="./public/images/monotree-hero.png" alt="Monotree Background" width="522" height="616">
+        </section>
+    </main>
+
+    <footer class="footer__credit"><a href="https://github.com/andika04kd" class="btn">Made by Andika</a></footer>
 </body>
 </html>

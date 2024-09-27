@@ -3,13 +3,14 @@
     top: 0;
     right: -100%;
     width: 37%;
-    height: 100%;
+    height: auto;
     background-color: var(--clr-grey500);
     color: var(--clr-white);
     display: flex;
     flex-direction: column;
     padding: 1rem;
     transition: right 0.3s ease;
+    z-index: 10;
 }
 
 .mobile-nav__header-option {
@@ -48,9 +49,9 @@
             width: 33%;
         }
     
-        .mobile-nav__header-option {
-            font-size: var(--size-3xl);
-        }
+    .mobile-nav__header-option {
+        font-size: var(--size-3xl);
+    }
 }
 
 /* md */
